@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Dashboard - EduPath</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex h-auto min-h-screen w-full flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7eff3] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-[#0d171b]">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z" fill="currentColor"></path></svg>
+              </div>
+              <h2 class="text-[#0d171b] text-lg font-bold leading-tight tracking-[-0.015em]">
+                <a href="../index.html">EduPath</a>
+              </h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-[#0d171b] text-sm font-medium leading-normal" href="../index.html">Home</a>
+              <a class="text-[#0d171b] text-sm font-medium leading-normal" href="courses.html">Courses</a>
+              <a class="text-[#0d171b] text-sm font-medium leading-normal" href="colleges.html">Colleges</a>
+              <a class="text-[#0d171b] text-sm font-medium leading-normal" href="careers.html">Careers</a>
+              <a class="text-[#0d171b] text-sm font-medium leading-normal" href="scholarships.html">Scholarships</a>
+              <a class="text-[#0d171b] text-sm font-medium leading-normal" href="community.html">Community</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#4c809a] flex border-none bg-[#e7eff3] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d171b] focus:outline-0 focus:ring-0 border-none bg-[#e7eff3] focus:border-none h-full placeholder:text-[#4c809a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <div class="flex items-center gap-4">
+              <button class="text-[#0d171b] text-sm font-medium leading-normal" onclick="window.location.href='profile.html'">Profile</button>
+              <button class="text-[#0d171b] text-sm font-medium leading-normal" onclick="window.location.href='../index.html'">Logout</button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="text-[#0d171b] tracking-light text-[32px] font-bold leading-tight min-w-72">Welcome back, Student</p>
+            </div>
+            <h2 class="text-[#0d171b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recommended Courses</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDG-IDTqEpUeAYk0KpDa5qxWBkoU2NdaIC4oQmuHzlNVxHhZMXKACvdEPrYnBfnfNhVpiByjXkYK7K0bKwYpgYldK0cvHu86gOuy6fYFut3_dSISRGzS_COov6WujuIkUZXduIc6jFj2YWyVtFymFLvd8L0ZZ-Pjhvfoj_PvqBB0SgMsWZpaPjEkmyger9QYOw1G4YzSjq_Eb4w53Khs-XtCnXyo6gMwmVk9Sx1c7BBwI-KVokAO8X0hpuHBARODOSfDchBW9OUkr8");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0d171b] text-base font-medium leading-normal">Advanced Mathematics</p>
+                    <p class="text-[#4c809a] text-sm font-normal leading-normal">Dive into complex equations and theories.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAzIBVjP_JL3s2SztoZyiZIMwjQUuV5TJ_s2YPQXxmqbbJidIbpgC8X5HphUnzD1gS7j9XUQTEuWvli_veivKjZqLOv7BD7_5VB5kiTAQu22zmqMgZg5TQIYu4rCiwDbFa7pse3ahr4coIyuH8s2r5lWV-VS-t2lD_15UQM6vS0VSXTo279AdW6EbJwiTFRGmbLx564y94RhN-reUz_njPr3yvVfHCzmBhFsebQ5UKU9zybyqfvQ5hsmsrK1wQBYHmqMhiLrvS-Mm4");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0d171b] text-base font-medium leading-normal">Applied Sciences</p>
+                    <p class="text-[#4c809a] text-sm font-normal leading-normal">Explore practical applications of scientific principles.</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIjzdowt-7MK3-WT026_I0wd6fWoZhvTwGTvMKyRpjjmL8A5MxyqNrYhSzmaUznB0gMpGnIMQoHz_CQFbdtuFrBLaV8-seHxVNKlxZSlD3sRdwpNAyIeGs0x7WBq-C6B_GLfW-T0C68hlQU9l8QaPtZzp1VdSzeezqogDp5_9y498KKU50eY4Of8374PZYDIZmPcY5lL8c6np7yTenyD_i3_jrPuRAAS7_oLBFtyQWEaPXJlLicl9aMuyAvH49MT0dj84c-1mV3jA");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0d171b] text-base font-medium leading-normal">World History</p>
+                    <p class="text-[#4c809a] text-sm font-normal leading-normal">Uncover the stories and events that shaped our world.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#0d171b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Nearby Colleges</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXoahPgKP2Wxs4Z7bBhageG23kvKesWSSBt07QQr-p1UAAU-XImIFKzyvnjhbG0QAYNDp8KGn_s2xfvX2Qoo6goNvNY5MsxQtv9rw2XdmNOQEwpMO4KiLPzKd-qrfFRlGe7UBsPCJVKRai2IeuHDjzxGqHx6rVuYjoC5uEa7pVRgJDZrIV-NySYNQMU9qtHnKmLkcVWYW22zHguO2tWGKXbEMw7paCm6puZt2JiSqOUTfq4KEAcvMD_ELfVV1nHyesdLyRhiazzbY");'
+                ></div>
+                <div>
+                  <p class="text-[#0d171b] text-base font-medium leading-normal">Tech Institute of Advanced Studies</p>
+                  <p class="text-[#4c809a] text-sm font-normal leading-normal">12 km away</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvEQWQZNKp4SKvtTetS73YIwtba345liapXw68dlZUOeu5sYjagSYuUx9lOoGYyGUWPa2PbnlDTYZiiGdj_sM1Z9RZOfxag5cvlgeXCv6emPNABRWwyPb5a910MaZzsoMjwR_IuVkiMzoANtLh1s4yRLrSs_-4MGBOx9gOvgHZ8KYnqzlC0t7PQ9Hr4xEkDgJoOT470Jnf_VNgVDd0UaOLxM2_Hcg44_XVIWkeORpyFHeMoeRoMV0mKD9GJd07CLbm20mALseAf7g");'
+                ></div>
+                <div>
+                  <p class="text-[#0d171b] text-base font-medium leading-normal">Metropolitan University</p>
+                  <p class="text-[#4c809a] text-sm font-normal leading-normal">18 km away</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC36RcC-AwiwPIRDi6LvD_UHPThKS47Wq1HTKrEvzqYFbVk5vfYigqTsQzAS0FimQ3FbZZmahzKPKxtvU-4ti1L2O4sMW3Vk--WH6XBWVBFLYsoL59MCzkh_rmNyMhab7MQZQ4it7IObVsOWI4oRflQvpkMOchVvZ0dI-S-rT2D-9faZfjzXspHIhJ7HJXqWjbqrrK17Uflbvod6GJC8I9A3cMSG4JHYmwbhHEIkoZyqJ9-koVUT8iRuds_ihndredvNrFXZ0B0Dis");'
+                ></div>
+                <div>
+                  <p class="text-[#0d171b] text-base font-medium leading-normal">City College of Arts and Sciences</p>
+                  <p class="text-[#4c809a] text-sm font-normal leading-normal">25 km away</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#0d171b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Suggested Career Paths</h2>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#4c809a] text-sm font-normal leading-normal">Based on your aptitude</p>
+                  <p class="text-[#0d171b] text-base font-bold leading-tight">Software Engineer</p>
+                  <p class="text-[#4c809a] text-sm font-normal leading-normal">Develop innovative software solutions and applications.</p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMVpnCwwURK9R7P9kXuTT0K66fJ8jrMGP6hxwNuw2TvKhfVXYQxdsQZ-9VG8IE3bIW5-DCOK7uAMjyXuE-X0eNV6CWXWa6p6YW1ffocQHS_x56HWmyA53WrmF_ywCN9wSLRSMflLdm4adxYsAMiWkdrDrF020wJM1iTCOXb72ULjO-8bU4kXufcqqUvUjTRF9bQNxBMVQ_G7H2N8sA82mh_uHCx3l1WJjcmYiO0dQSIzebjRhJypqjevQAqGrmvLDqzhZdcSSeVxg");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#4c809a] text-sm font-normal leading-normal">Based on your aptitude</p>
+                  <p class="text-[#0d171b] text-base font-bold leading-tight">Data Scientist</p>
+                  <p class="text-[#4c809a] text-sm font-normal leading-normal">Analyze complex data sets to extract meaningful insights.</p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOTGqp-tEA5Ouv9fsoD3oitWeVZSffSoJLcZCnR0-al5q0iD5fAZPdKZzgUOrGZdPESrUgv5y67YZQK7sD9j6Z8v7w0A2HpI334rvR-PAEvejvJ4AnvT9rtEGPGuJ98Qq3Lnb3AWiTJSeM40cypLfGsCekWKxrSv5mraP0_NaWUhLQBGfSd632DDoQM1amMlKDtSt10Gwc2ZGqwNiXYLIcn6sgeR9tGqCEFQ5r_Y_asmMiDxDue9boVzQ2cs5_O4Cos7JiDprYfRs");'
+                ></div>
+              </div>
+            </div>
+            <h2 class="text-[#0d171b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Quick Actions</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3 p-4">
+              <button class="flex flex-col gap-3 p-4 rounded-lg border border-[#cfdfe7] bg-slate-50 hover:bg-[#e7eff3]" onclick="window.location.href='quiz.html'">
+                <div class="text-[#0d171b]" data-icon="Brain" data-size="24px">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M224,48a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8V208a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V48ZM208,200H48V56H208V200ZM96,104a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,104Zm0,32a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,136Zm0,32a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,168Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-[#0d171b] text-base font-medium leading-normal">Take Aptitude Quiz</p>
+                  <p class="text-[#4c809a] text-sm font-normal leading-normal">Discover your strengths and interests</p>
+                </div>
+              </button>
+              <button class="flex flex-col gap-3 p-4 rounded-lg border border-[#cfdfe7] bg-slate-50 hover:bg-[#e7eff3]" onclick="window.location.href='career-explorer.html'">
+                <div class="text-[#0d171b]" data-icon="Compass" data-size="24px">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM172.42,99.58l-32,80a8,8,0,0,1-14.84,0l-32-80a8,8,0,0,1,14.84-5.58L128,140.42l19.58-46.42A8,8,0,0,1,172.42,99.58Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-[#0d171b] text-base font-medium leading-normal">Explore Careers</p>
+                  <p class="text-[#4c809a] text-sm font-normal leading-normal">Find career paths that match your profile</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
